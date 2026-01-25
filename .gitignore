@@ -1,0 +1,19 @@
+# Claude Code workspace
+.claude/
+
+# Vendor software
+MINI KEYBOARD TOOL V1/
+
+# USB captures
+*.pcapng
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
