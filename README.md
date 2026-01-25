@@ -1,8 +1,25 @@
 # Macro Keyboard Driver
 
-Cross-platform driver for configuring a 6-button macro keyboard with rotary encoder.
+A simple, lightweight Python driver for configuring a 6-button USB macro keyboard with rotary encoder on Linux (and Windows via WSL2).
 
-## Hardware
+> **Alternative:** If you're looking for a more feature-rich Windows GUI application with macro sequences, LED control, and advanced features, check out [MacroPad by rOzzy1987](https://github.com/rOzzy1987/MacroPad). This project focuses on a minimal, scriptable command-line approach for Linux users.
+
+## Supported Device
+
+This driver works with cheap 6-button macro keyboards commonly sold on AliExpress/Amazon with the following identifiers:
+
+| Property | Value |
+|----------|-------|
+| Vendor ID | `1189` (Acer Communications & Multimedia) |
+| Product ID | `8890` |
+| Common names | "Mini Keyboard", "6-Key Macro Pad", "Programmable Keypad" |
+| Buttons | 6 |
+| Rotary Encoder | 1 (with click and rotation) |
+| Connection | USB |
+
+![Macro Keyboard](https://ae-pic-a1.aliexpress-media.com/kf/S6c3b94647e1548e4a6e93b5f0eaa99acW.jpg_480x480.jpg_.webp)
+
+## Features
 
 | Property | Value |
 |----------|-------|
@@ -20,12 +37,18 @@ Cross-platform driver for configuring a 6-button macro keyboard with rotary enco
 - Configuration stored in device firmware (persists across reboots)
 - Works on Linux, macOS, and Windows (via WSL2)
 
+## Where to Buy
+
+These keyboards are widely available:
+- [AliExpress](https://www.aliexpress.us/item/3256806973798566.html) (~$10-15 USD)
+- Search for "6 key macro keyboard rotary knob" on Amazon, eBay, etc.
+
 ## Installation
 
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd mcrokeydriver
+git clone https://github.com/nonatofabio/macrokey-driver.git
+cd macrokey-driver
 
 # Install pyusb (required for configuration)
 pip install pyusb
