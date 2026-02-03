@@ -68,6 +68,7 @@ KEYCODES = {
     'down': 0x51, 'up': 0x52,
     # Media keys (consumer control - may need different handling)
     'mute': 0x7f, 'volumeup': 0x80, 'volumedown': 0x81,
+    'nexttrack': 0xb5, prevtrack: 0xb6, playpause: 0xcd,
 }
 
 # Reverse lookup for keycodes
